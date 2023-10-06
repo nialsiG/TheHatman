@@ -19,7 +19,7 @@ public class PlayerLightInteraction : MonoBehaviour
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
-    //Get invisible when entering lit area
+    //Become invisible when entering lit area
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Light")
@@ -32,7 +32,7 @@ public class PlayerLightInteraction : MonoBehaviour
         }
     }
 
-    //Get invisible when exiting lit area
+    //Become visible when exiting lit area
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.tag == "Light")
